@@ -1,29 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alcove Counseling | Kim Wood LMHC</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4b6cb7;
+            padding: 1rem 2rem;
+        }
+
+        nav div:first-child {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .button {
+            display: inline-block;
+            background-color: #ffb347;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .hero .button:hover {
+            background-color: #ff8c00;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .container img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            border: 3px solid #4b6cb7;
+        }
+
+        .container h2 {
+            color: #4b6cb7;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .container p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #182848;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav div:last-child {
+                margin-top: 0.5rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<nav>
-    <div style="color:white; font-weight:bold;">Alcove Counseling</div>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="approach.html">Approach</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="contact.html">Contact</a>
+    <nav>
+        <div>Alcove Counseling</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="approach.html">Approach</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Compassionate Telehealth Counseling in Florida</h1>
+        <p>Warm, evidence-informed therapy to support healing, connection, and self-understanding.</p>
+        <a class="button" href="schedule.html">Schedule Your First Session</a>
     </div>
-</nav>
 
-<div class="hero">
-    <h1>Compassionate Telehealth Counseling in Florida</h1>
-    <p>Warm, evidence-informed therapy to support healing, connection, and self-understanding.</p>
-    <a class="button" href="schedule.html">Schedule Your First Session</a>
-</div>
+    <div class="container">
+    <!-- Your picture -->
+    <img src="me.jpeg" alt="Kim Wood LMHC">
 
-<div class="container">
     <h2>Welcome</h2>
     <p>
         I’m <strong>Kim (Kimberly) Wood, LMHC</strong>, a Florida-based therapist providing 
@@ -37,10 +160,11 @@
     </p>
 </div>
 
-<footer>
-    Alcove Counseling • Kim Wood LMHC • Telehealth in Florida only<br>
-    This website is not for emergency use. If you are in crisis, call 988 or go to the nearest ER.
-</footer>
+
+    <footer>
+        Alcove Counseling • Kim Wood LMHC • Telehealth in Florida only<br>
+        This website is not for emergency use. If you are in crisis, call 988 or go to the nearest ER.
+    </footer>
 
 </body>
 </html>

@@ -6,18 +6,13 @@
     <title>Alcove Counseling | Kim Wood LMHC</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Basic Reset */
-        * {
-            box-sizing: border-box;
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-        body {
             line-height: 1.6;
+            background-color: #f9f9f9;
             color: #333;
-            background-color: #f8f9fa;
         }
 
         nav {
@@ -38,7 +33,6 @@
             color: white;
             text-decoration: none;
             margin-left: 1.5rem;
-            font-weight: 500;
         }
 
         nav a:hover {
@@ -48,7 +42,7 @@
         .hero {
             text-align: center;
             padding: 4rem 2rem;
-            background: linear-gradient(to right, #4b6cb7, #182848);
+            background-color: #4b6cb7;
             color: white;
         }
 
@@ -65,30 +59,31 @@
         .hero .button {
             display: inline-block;
             background-color: #ffb347;
-            color: #fff;
+            color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            transition: background 0.3s ease;
         }
 
         .hero .button:hover {
-            background-color: #ff8c00;
+            background-color: #ffa500;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 3rem auto;
             padding: 0 2rem;
             text-align: center;
         }
 
         .container img {
-            max-width: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            margin-bottom: 1.5rem;
+            object-fit: cover;
             border: 3px solid #4b6cb7;
+            margin-bottom: 1.5rem;
         }
 
         .container h2 {
@@ -103,8 +98,8 @@
         }
 
         footer {
-            background-color: #182848;
-            color: #fff;
+            background-color: #4b6cb7;
+            color: white;
             text-align: center;
             padding: 1.5rem 2rem;
             font-size: 0.9rem;
@@ -115,9 +110,11 @@
             nav {
                 flex-direction: column;
             }
+
             nav div:last-child {
                 margin-top: 0.5rem;
             }
+
             .hero h1 {
                 font-size: 2rem;
             }
@@ -144,22 +141,21 @@
     </div>
 
     <div class="container">
-    <!-- Your picture -->
-    <img src="me.jpeg" alt="Kim Wood LMHC">
+        <!-- Your picture -->
+        <img src="me.jpeg" alt="Kim Wood LMHC">
 
-    <h2>Welcome</h2>
-    <p>
-        I’m <strong>Kim (Kimberly) Wood, LMHC</strong>, a Florida-based therapist providing 
-        trauma-informed, client-centered telehealth counseling for adults seeking clarity, 
-        grounding, and emotional wellness.
-    </p>
+        <h2>Welcome</h2>
+        <p>
+            I’m <strong>Kim (Kimberly) Wood, LMHC</strong>, a Florida-based therapist providing 
+            trauma-informed, client-centered telehealth counseling for adults seeking clarity, 
+            grounding, and emotional wellness.
+        </p>
 
-    <p>
-        Together, we’ll create a supportive space to explore your inner world—your strengths, 
-        your wounds, your patterns—and move toward meaningful change.
-    </p>
-</div>
-
+        <p>
+            Together, we’ll create a supportive space to explore your inner world—your strengths, 
+            your wounds, your patterns—and move toward meaningful change.
+        </p>
+    </div>
 
     <footer>
         Alcove Counseling • Kim Wood LMHC • Telehealth in Florida only<br>

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me | Alcove Counseling</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Alcove Counseling</title>
+    <meta name="description" content="Learn about Kim Wood, LMHC. Trauma-informed telehealth therapy in Florida for adults. EMDR, IFS, Attachment-Based Therapy, DBT, CBT. Free 15-minute consultation.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
-    <div style="color:white; font-weight:bold;">Alcove Counseling</div>
-    <div>
+    <div class="logo">Alcove Counseling</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="approach.html">Approach</a>
@@ -17,35 +22,58 @@
     </div>
 </nav>
 
-<div class="container">
-    <h1>About Me</h1>
-    <img src="me.jpeg" alt="Kim Wood LMHC" class="about-photo">
+<!-- HERO -->
+<div class="hero fade">
+    <div class="hero-text">
+        <h1>About Kim Wood, LMHC</h1>
+        <p class="tagline">Helping avoidants & big feelers navigate relationships, emotions, & trauma.</p>
+        <a class="button" href="https://care.headway.co/providers/kim-wood" target="_blank">
+            Free 15-Minute Consultation
+        </a>
+    </div>
 
-    <p>
-        I’m <strong>Kim (Kimberly) Wood, LMHC</strong>, a licensed mental health counselor in Florida. 
-        My work is grounded in compassion and the belief that every person deserves 
-        a space where they can feel seen, understood, and safe.
-    </p>
-
-    <p>
-        I bring a warm, steady, and client-centered presence to therapy, integrating 
-        approaches like EMDR, IFS-informed parts work, DBT skills, attachment theory, 
-        and trauma-focused CBT. My goal is to support you in healing patterns that no longer 
-        serve you and rediscovering your inner wisdom.
-    </p>
-
-    <p>
-        Outside of therapy, I’m someone who loves long phone calls, learning a new hobby,
-        and laughter.
-    </p>
+    <img src="me.jpeg" alt="Kim Wood therapist photo">
 </div>
 
+<!-- BIO SECTION -->
+<section class="fade">
+    <h2>Meet Kim</h2>
+    <p>
+        I’m <strong>Kim Wood, LMHC</strong>, a Florida-based therapist providing trauma-informed, client-centered telehealth counseling for adults seeking clarity, grounding, and emotional wellness.
+    </p>
+    <p>
+        We’ll create a supportive space to explore your inner world (your strengths, your wounds, your patterns) and move toward meaningful change.
+    </p>
+</section>
+
+<!-- ALCOVE PHILOSOPHY -->
+<section class="alcove-story fade">
+    “Alcoves are formed by years of weathering the side of something as strong as rock, 
+    creating a nook of shelter. Whatever your weather, my hope for Alcove is that it becomes 
+    a small place of rest and healing, even in the midst of grief, pain, or uncertainty.”
+</section>
+
+<!-- CTA SECTION -->
+<section class="fade" style="text-align:center;">
+    <h2>Start With a Free Consultation</h2>
+    <p>
+        I offer a 15-minute consultation so you can ask questions, share your goals, and get a feel for how we might work together.
+    </p>
+    <a class="button" href="https://care.headway.co/providers/kim-wood" target="_blank">
+        Schedule Your Free Consultation
+    </a>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    Alcove Counseling • Kim Wood LMHC • Telehealth in Florida only<br>
-    This website is not for emergency use. If you are in crisis, call 988 or go to the nearest ER.
+    Alcove Counseling • Kim Wood LMHC • Telehealth in Florida Only
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("open");
+}
+</script>
 
 </body>
 </html>
-
-

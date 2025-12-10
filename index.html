@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alcove Counseling | Kim Wood LMHC</title>
-    <meta name="description" content="Trauma-informed telehealth counseling in Florida. Helping avoidants & big feelers navigate relationships, emotions, and trauma. EMDR, IFS, Attachment-Based Therapy, DBT, CBT. Free 15-minute consultation.">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAV -->
+<!-- NAVIGATION -->
 <nav>
     <div class="logo">Alcove Counseling</div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-    <div class="nav-links" id="navLinks">
+    <div class="menu-toggle">&#9776;</div>
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="approach.html">Approach</a>
@@ -26,73 +22,57 @@
 </nav>
 
 <!-- HERO -->
-<div class="hero fade">
-    <div class="hero-text">
-        <h1>Kim Wood, LMHC</h1>
-        <p class="tagline">Helping avoidants & big feelers navigate relationships, emotions, & trauma.</p>
-        <p class="sub">
-            Trauma-informed, client-centered telehealth counseling for adults across Florida.  
-            EMDR • IFS • Attachment-Based • DBT Skills • CBT
-        </p>
-        <a class="button" href="https://care.headway.co/providers/kim-wood" target="_blank">
-            Free 15-Minute Consultation
-        </a>
-    </div>
+<section class="hero">
+    <img src="me.jpeg" alt="Kim Wood LMHC">
+    <h1>Compassionate Telehealth Counseling in Florida</h1>
+    <p class="tagline">Helping avoidants & big feelers navigate relationships & emotions & trauma</p>
+    <a href="schedule.html" class="button">Free 15-Minute Consultation</a>
+</section>
 
-    <img src="me.jpeg" alt="Kim Wood therapist photo">
-</div>
+<!-- ABOUT / INTRO -->
+<section>
+    <h2>Welcome</h2>
+    <p>I’m <strong>Kim (Kimberly) Wood, LMHC</strong>, a Florida-based therapist providing trauma-informed, client-centered telehealth counseling for adults seeking clarity, grounding, and emotional wellness.</p>
+    <p>Together, we’ll create a supportive space to explore your inner world—your strengths, your wounds, your patterns—and move toward meaningful change.</p>
+</section>
 
-<!-- ALCOVE STORY BLOCK -->
-<div class="alcove-story fade">
-    “Alcoves are formed by years of weathering the side of something as strong as rock, 
-    creating a nook of shelter. Whatever your weather, my hope for Alcove is that it becomes 
-    a small place of rest and healing, even in the midst of grief, pain, or uncertainty.”
-</div>
-
-<!-- WHAT I OFFER -->
-<section class="fade">
-    <h2>Support Grounded in Evidence & Compassion</h2>
-    <p>
-        I provide warm, collaborative, trauma-informed therapy to help you understand your inner world, 
-        shift old patterns, and move toward emotional clarity and connection. We create a steady space 
-        for insight, nervous system healing, and meaningful change.
-    </p>
+<!-- ALCOVE STORY -->
+<section class="alcove-story">
+    <p>“Alcoves are formed by years of weathering the side of something as strong as rock, creating a nook of shelter. Whatever your weather, my hope for Alcove is that it becomes a small place of rest and healing, even in the midst of grief, pain, or uncertainty.”</p>
 </section>
 
 <!-- MODALITIES -->
-<section class="fade">
-    <h2>Therapeutic Approaches</h2>
-
+<section>
+    <h2>Therapy Modalities</h2>
     <div class="modalities">
         <div class="modality-card">EMDR</div>
-        <div class="modality-card">IFS (Parts Work)</div>
-        <div class="modality-card">Attachment-Based Therapy</div>
-        <div class="modality-card">DBT Skills</div>
+        <div class="modality-card">IFS</div>
+        <div class="modality-card">Attachment-Based</div>
+        <div class="modality-card">DBT</div>
         <div class="modality-card">CBT</div>
     </div>
 </section>
 
-<!-- CTA SECTION -->
-<section class="fade" style="text-align:center;">
-    <h2>Begin Your Healing</h2>
-    <p>
-        I offer a free 15-minute consultation so you can ask questions, share what you’re looking for, 
-        and get a feel for working together.
-    </p>
-    <a class="button" href="https://care.headway.co/providers/kim-wood" target="_blank">
-        Schedule Your Free Consultation
-    </a>
+<!-- WHAT TO EXPECT -->
+<section>
+    <h2>What to Expect</h2>
+    <p>First sessions include a chance to get to know each other, explore your goals, and begin your therapeutic journey at a pace that feels comfortable. A 15-minute consultation is available free of charge to see if we are a good fit.</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    Alcove Counseling • Kim Wood LMHC • Telehealth in Florida Only
+    Alcove Counseling • Kim Wood LMHC • Telehealth in Florida only<br>
+    This website is not for emergency use. If you are in crisis, call 988 or go to the nearest ER.
 </footer>
 
 <script>
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("open");
-}
+    // Mobile nav toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
 </script>
 
 </body>

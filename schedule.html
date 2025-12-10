@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule a Session | Alcove Counseling</title>
+    <meta name="description" content="Schedule a telehealth counseling session with Kim Wood, LMHC. Trauma-informed therapy for adults. Free 15-minute consultation available.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
-    <div style="color:white; font-weight:bold;">Alcove Counseling</div>
-    <div>
+    <div class="logo">Alcove Counseling</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="approach.html">Approach</a>
@@ -17,30 +22,51 @@
     </div>
 </nav>
 
-<div class="container">
-    <h1>Schedule Your First Session</h1>
+<!-- HERO -->
+<div class="hero fade">
+    <div class="hero-text">
+        <h1>Schedule Your Session</h1>
+        <p class="tagline">Helping avoidants & big feelers navigate relationships, emotions, & trauma.</p>
+        <a class="button" href="https://care.headway.co/providers/kim-wood" target="_blank">
+            Free 15-Minute Consultation
+        </a>
+    </div>
 
-    <p>
-        I offer secure, convenient telehealth counseling for adults located anywhere in Florida.
-        Scheduling is handled through Headway for easy insurance verification and appointment management.
-    </p>
-
-    <a class="button" href="https://care.headway.co/providers/kim-wood" target="_blank">
-        Book Through Headway
-    </a>
-
-    <h2>What to Expect in a First Session</h2>
-    <p>
-        Our first session is a chance to get to know each other, talk about what brings you to therapy, 
-        and begin outlining your goals. I’ll ask questions at a pace that feels comfortable and we’ll 
-        move gently into your story.
-    </p>
+    <img src="me.jpeg" alt="Kim Wood therapist photo">
 </div>
 
+<!-- SCHEDULING INFO -->
+<section class="fade">
+    <h2>Booking Through Headway</h2>
+    <p>
+        Sessions are offered securely via telehealth for adults located anywhere in Florida.  
+        Insurance verification and billing are handled directly through Headway for convenience.
+    </p>
+    <a class="button" href="https://care.headway.co/providers/kim-wood" target="_blank">
+        Schedule Through Headway
+    </a>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section class="fade">
+    <h2>What to Expect in Your First Session</h2>
+    <p>
+        Your first session is a chance to explore what brings you to therapy and begin outlining goals.  
+        Pace is guided by your comfort, and focus is placed on understanding patterns and fostering resilience.  
+        A free 15-minute consultation is also available to answer questions and discuss fit before committing.
+    </p>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    Alcove Counseling • Kim Wood LMHC • Telehealth in Florida only<br>
-    This website is not for emergency use. If you are in crisis, call 988 or go to the nearest ER.
+    Alcove Counseling • Kim Wood LMHC • Telehealth in Florida Only
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("open");
+}
+</script>
 
 </body>
 </html>
